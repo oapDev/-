@@ -1,3 +1,6 @@
+import sys
+sys.modules['audioop'] = None
+
 import discord
 from discord.ext import commands
 from discord.ui import Button, View
@@ -184,5 +187,6 @@ async def pid(ctx, pid: str):
 
     except Exception as e:
         await status_msg.edit(content=f"❌ **System Error:** `{str(e)}`", embed=None)
+
 
 bot.run(TOKEN)
