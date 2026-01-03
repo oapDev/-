@@ -1,6 +1,3 @@
-import sys
-sys.modules['audioop'] = None
-
 import discord
 from discord.ext import commands
 from discord.ui import Button, View
@@ -190,3 +187,4 @@ async def pid(ctx, pid: str):
 
 
 bot.run(TOKEN)
+
